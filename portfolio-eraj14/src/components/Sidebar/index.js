@@ -20,15 +20,16 @@ const Sidebar = () => {
             </Link>
             <nav>
                 <NavLink exact="true" activeclassname="active" to='/'>
-                    <FontAwesomeIcon icon={faHome} color={iconColor} />
+                    <FontAwesomeIcon icon={faHome} color={iconColor} alt="home-icon"/>
                 </NavLink>
 
                 <NavLink exact="true" activeclassname="active" className="contact-link" to='/contact'>
-                    <FontAwesomeIcon icon={faEnvelope} color={iconColor} />
+                    <FontAwesomeIcon icon={faEnvelope} color={iconColor} alt="envelope-icon"/>
                 </NavLink>
             </nav>
             <div>
             <FontAwesomeIcon 
+                alt = "theme-toggle-icon"
                 icon={themeIcon} 
                 className={`toggle-icon ${theme}`} 
                 onClick={toggleTheme} 
@@ -38,17 +39,17 @@ const Sidebar = () => {
             <ul>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/eraj-uzakov/">
-                        <FontAwesomeIcon icon={faLinkedin} color={iconColor} />
+                        <FontAwesomeIcon icon={faLinkedin} color={iconColor} alt ="linkedin-icon" />
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://github.com/eraj14">
-                        <FontAwesomeIcon icon={faGithub} color={iconColor} />
+                        <FontAwesomeIcon icon={faGithub} color={iconColor} alt ="github-icon"/>
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://www.instagram.com/eraj_uzakov/">
-                        <FontAwesomeIcon icon={faInstagram} color={iconColor} />
+                        <FontAwesomeIcon icon={faInstagram} color={iconColor} alt ="instagram-icon"/>
                     </a>
                 </li>
             </ul>

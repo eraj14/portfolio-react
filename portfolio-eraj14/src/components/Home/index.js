@@ -1,7 +1,6 @@
 import React from 'react';
 import './index.scss';
 import ProfilePic from '../../assets/profile.jpg';
-import { useTheme } from '../../ThemeContext';
 
 const Home = () => {
     const columnStyle = {
@@ -45,7 +44,7 @@ const Home = () => {
                 <br></br>
             </div>
             <div style={columnStyle}>
-                {/* Background column */}
+                {/*Background*/}
                 <div style={columnItemStyle}>
                     <h2>About My Background</h2>
                     <img src={ProfilePic} alt="Eraj" style={imageStyle} />
@@ -58,7 +57,7 @@ const Home = () => {
                     </p>
                 </div>
 
-                {/* Projects column */}
+                {/*Projects*/}
                 <div style={{...columnItemStyle, display: 'block'}}> 
                     <h2>My Projects and Resume</h2>
                     <div style={gridStyle}>
@@ -66,23 +65,23 @@ const Home = () => {
                             <h3>"Picturetag" Photoapp</h3>
                             <p>Conceptualized a photo application that extracts features using image recognition APIs, leveraging Node.js and Express.js.
  The application utilizes 4 AWS services: Elastic Beanstalk, S3, RDS, and EC2.</p>
-                            <a href="https://github.com/eraj14/picturetag" target="_blank">View on GitHub</a>
+                            <a href="https://github.com/eraj14/picturetag" target="_blank" alt ="link1">View on GitHub</a>
                         </div>
                         <div>
                             <h3>"Your Life" AI Bio Video Generator</h3>
                             <p>Implemented Flask framework to create a web application that generates personalized bio videos.</p>
-                            <a href="https://github.com/eraj14/YourLife" target="_blank">View on GitHub</a>
+                            <a href="https://github.com/eraj14/YourLife" target="_blank" alt ="link2">View on GitHub</a>
                         </div>
                         <div>
                             <h3>"Memory Trails" Trip Photo Keeper</h3>
                             <p>An app to record trips in chronological order to enable to relive the memories later. 
                             The app uses React.js and Firebase for the backend.</p>
-                            <a href="https://github.com/394-w24/MemoryTrails" target="_blank">View On GitHub</a>
+                            <a href="https://github.com/394-w24/MemoryTrails" target="_blank" alt ="link3">View On GitHub</a>
                         </div>
                         <div>
                             <h3>Resume</h3>
                             <p>View my latest resume using the link below:</p>
-                            <a href="https://github.com/eraj14/resumes/blob/main/R-205928_Eraj_Uzoqov.pdf" target="_blank">View</a>
+                            <a href="https://github.com/eraj14/resumes/blob/main/R-205928_Eraj_Uzoqov.pdf" alt ="link4" target="_blank">View</a>
                         </div>
                     </div>
                 </div>
