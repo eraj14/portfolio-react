@@ -7,6 +7,16 @@
   z-index: 3;
   min-height: 500px;
 
+  .toggle-icon {
+    display: block;
+      margin: 8px auto;
+      width: 30px;
+      height: auto;     
+      
+  }
+  
+
+
   .logo {
     display: block;
     padding: 8px 0;
@@ -61,12 +71,26 @@
 
     }
 
-    a.active {
-        background: #fafafa;
-      svg {
-        color: #5ABCb9;
+    
+    
+    .light-theme & {
+      a.active {
+        background: #fafafa; 
+        svg {
+          color: #5ABCb9;
+        }
       }
     }
+  
+    .dark-theme & {
+      a.active {
+        background: #000; 
+        svg {
+          color: #5ABCb9; 
+        }
+      }
+    }
+    
   }
 
   ul {

@@ -1,11 +1,14 @@
 import './index.scss';
 import Sidebar from '../Sidebar';
 import { Outlet } from 'react-router-dom';
+import { useTheme } from '../../ThemeContext';
 
 
 const Layout = () => {
+    const { theme } = useTheme(); 
     return (
-        <div className='App'>
+        
+        <div className={`App ${theme}`}>
 
             <Sidebar />
             <div className='page'>
