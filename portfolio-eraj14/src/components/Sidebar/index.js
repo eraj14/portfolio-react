@@ -1,4 +1,4 @@
-import './index.css'
+import './index.scss'
 import { Link, NavLink } from 'react-router-dom';
 import LogoE from '../../assets/logo.png'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -13,30 +13,28 @@ const Sidebar = () => (
             <img src = {LogoE} alt = "logo" />
         </Link>
         <nav>
-            <NavLink exact = "true" activeClassName = "active" to = '/'>
+            <NavLink exact = "true" activeclassname = "active" to = '/'>
                 <FontAwesomeIcon icon = {faHome} color = "#181818"/>
             </NavLink>
-            <NavLink exact = "true" activeClassName = "active" classname = "about-link" to = '/about'>
-                <FontAwesomeIcon icon = {faUser} color = "#181818"/>
-            </NavLink>
-            <NavLink exact = "true" activeClassName = "active" classname = "contact-link" to = '/contact'>
+
+            <NavLink exact = "true" activeclassname = "active" className = "contact-link" to = '/contact'>
                 <FontAwesomeIcon icon = {faEnvelope} color = "#181818"/>
             </NavLink>
             
         </nav>
         <ul>
             <li>
-                <a target ="_blank" rel = "noreferrer" href="/">
+                <a target ="_blank" rel = "noreferrer" href="https://www.linkedin.com/in/eraj-uzakov/">
                     <FontAwesomeIcon icon = {faLinkedin} color = "#181818"/>
                 </a>
             </li>
             <li>
-                <a target ="_blank" rel = "noreferrer" href="/">
+                <a target ="_blank" rel = "noreferrer" href="https://github.com/eraj14">
                     <FontAwesomeIcon icon = {faGithub} color = "#181818"/>
                 </a>
             </li>
             <li>
-                <a target ="_blank" rel = "noreferrer" href="/">
+                <a target ="_blank" rel = "noreferrer" href="https://www.instagram.com/eraj_uzakov/">
                     <FontAwesomeIcon icon = {faInstagram} color = "#181818"/>
                 </a>
             </li>
@@ -45,3 +43,4 @@ const Sidebar = () => (
 )
 
 export default Sidebar
+
